@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>旅烨集团</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/idangerous.swiper.css"/>
+		<!--[if lt IE 9]>
+          <script src="js/html5shiv.min.js"></script>
+        <![endif]-->
+	</head>
+	<body>
+	<div class="container-center">
+		<!---------------------heder部分开始------------------>
+	    <div class="videoHeader clearfix">
+	     	<ul class="header-l"> 
+	     		<li class="back"><a href="learnlist.html"> 返回 </a></li>
+	     		<li class="neirong"><a href="">原生JS实现动画库 </a></li>
+	     		<li class="zhangjie"><a href="">1-1认识帧动画</a></li>
+	     		<li class="share"><a href="">分享</a></li>
+	     		<li class="bds_tsina"><a href="" title="分享到微薄">微博</a></li>
+	     		<li class="bds_weixin"><a href="" title="分享到威信">微信</a></li>
+	     		<li class="bds_qzone"><a href="" title="分享到QQ空间">QQ</a></li>
+	     	</ul>
+	     	<div class="header-right header-right2">
+					<div class="app">
+						APP
+					</div>
+					<div class="erweima">
+						   二维码
+					</div>
+					<div class="user-login" >
+						<a href="" class="message" title="我的通知">通知</a>
+						<a href="" class="email" title="我得消息">消息</a>
+						<a href="" class="userHPic" title="我得消息"><img src="images/user.jpg"></a>
+					</div>
+			</div>
+	    </div>
+		<!---------------------heder部分结束------------------>
+	
+		<!--中心视频部分-->
+		<div class="videoMain">
+		    <video id="really-cool-video" class="video-js vjs-default-skin  vjs-big-play-centered myView" 
+		    controls preload="auto" width="100%" height="650"
+		    poster="really-cool-video-poster.jpg" data-setup='{"example_option":true}'>
+				<source src="http://img.ksbbs.com/asset/Mon_1605/0ec8cc80112a2d6.mp4" type="video/mp4">
+				<source src="http://img.ksbbs.com/asset/Mon_1605/0ec8cc80112a2d6.webm" type="video/webm">
+				<source src="http://img.ksbbs.com/asset/Mon_1605/0ec8cc80112a2d6.ogg" type="video/ogg">
+			    <track kind="captions" src="edrp-vtt.idx" srclang="en" label="English" default>
+			    <!--<track kind="captions" src="../shared/example-captions.vtt" srclang="en" label="English"></track>
+                <!-- Tracks need an ending tag thanks to IE9 -->
+                <!--<track kind="subtitles" src="../shared/example-captions.vtt" srclang="en" label="English"></track>-->-->-->
+                <!-- Tracks need an ending tag thanks to IE9 -->
+			       
+			    <!--<div class="video-js">
+				    <div class="vjs-icon-share" id="cool-vid">/div>
+				</div>-->
+				
+				<p class="vjs-no-js">
+				    To view this video please enable JavaScript, and consider upgrading to a web browser that 
+				    <a href="http://img.ksbbs.com/asset/Mon_1605/0ec8cc80112a2d6.mp4" target="_blank">supports HTML5 video</a>
+				</p>
+				<p class="vjs-no-js">播放视频需要启用 JavaScript，推荐使用支持HTML5的浏览器访问。</p>
+				
+		  </video>
+         <!-- <div class="next-page">下一节</div>-->
+		 </div>  
+		<!--中心视频部分-->
+
+		<!--<h1>Video.js Icons</h1>
+		<p>This is a list of all of the icons available in the Video.js base stylesheet. The appropriate class is to the right of each icon.</p>		
+		<ul class="icon-list">
+		    <li><span class="vjs-icon-play"></span> <code>.vjs-icon-play</code></li>
+		    <li><span class="vjs-icon-pause"></span> <code>.vjs-icon-pause</code></li>
+		    <li><span class="vjs-icon-volume-mute"></span> <code>.vjs-icon-volume-mute</code></li>
+		    <li><span class="vjs-icon-volume-low"></span> <code>.vjs-icon-volume-low</code></li>
+		    <li><span class="vjs-icon-volume-mid"></span> <code>.vjs-icon-volume-mid</code></li>
+		    <li><span class="vjs-icon-volume-high"></span> <code>.vjs-icon-volume-high</code></li>
+		    <li><span class="vjs-icon-fullscreen-enter"></span> <code>.vjs-icon-fullscreen-enter</code></li>
+		    <li><span class="vjs-icon-fullscreen-exit"></span> <code>.vjs-icon-fullscreen-exit</code></li>
+		    <li><span class="vjs-icon-square"></span> <code>.vjs-icon-square</code></li>
+		    <li><span class="vjs-icon-spinner"></span> <code>.vjs-icon-spinner</code></li>
+		    <li><span class="vjs-icon-subtitles"></span> <code>.vjs-icon-subtitles</code></li>
+		    <li><span class="vjs-icon-captions"></span> <code>.vjs-icon-captions</code></li>
+		    <li><span class="vjs-icon-chapters"></span> <code>.vjs-icon-chapters</code></li>
+		    <li><span class="vjs-icon-share"></span> <code>.vjs-icon-share</code></li>
+		    <li><span class="vjs-icon-cog"></span> <code>.vjs-icon-cog</code></li>
+		    <li><span class="vjs-icon-circle"></span> <code>.vjs-icon-circle</code></li>
+		    <li><span class="vjs-icon-circle-outline"></span> <code>.vjs-icon-circle-outline</code></li>
+		    <li><span class="vjs-icon-circle-inner-circle"></span> <code>.vjs-icon-circle-inner-circle</code></li>
+		</ul>-->
+		
+		<!--评论区域-->
+		<div class="video-center clearfix">
+			<div class="video-left l">
+				<div id="uyan_frame"></div>
+			</div>
+			<div class="video-right r"> 
+				<div class="courseLink">
+                	<h4>推荐课程</h4>
+                	<ul>
+                		<li><a href="">7天搞定Node.js微信公众号开发</a></li>
+                		<li><a href="">方式开发 Web App全站</a></li>
+                		<li><a href="">商城分类导航效果</a></li>
+                		<li><a href="">7天搞定Node.js微信公众号开发</a></li>
+                		<li><a href="">方式开发 Web App全站</a></li>
+                		<li><a href="">商城分类导航效果</a></li>
+                	</ul>
+                </div>
+			</div>
+		</div>
+        <!--评论区域-->
+                
+                        <!--周一工作内容：
+            1.页面兼容性测试及处理；
+            2.首页及视频页样式调整；
+            3.视频插件的封装，
+                           目前完成：视频加载前公司logo显示、
+                                             清晰度切换、
+                                             字幕文件加载、
+                                             播放结束后弹出“下一节”提示等基本功能。                     -->
+            
+        
+        
+		<!--footer2-->
+			<div class="footer2">
+				<div class="waper">
+				    <div class="footerwaper clearfix">
+				        <div class="followus r">
+				            <a class="followus-weixin" href="javascript:;" target="_blank" title="微信">
+				                <div class="flw-weixin-box"></div>
+				            </a>
+				            <a class="followus-weibo" href="" target="_blank" title="新浪微博"></a>
+				            <a class="followus-qzone" href="" target="_blank" title="QQ空间"></a>
+				        </div>
+				        <div class="footer_intro l">
+				            <div class="footer_link">
+				                <ul>
+				                    <li><a href="" target="_blank">网站首页</a></li>
+				                    <li><a href="" target="_blank">人才招聘</a></li>
+				                    <li><a href="" target="_blank">联系我们</a></li>
+				                    <li><a href="" target="_blank">旅烨云</a></li>
+				                    <li><a href=" " target="_blank">关于我们</a></li>
+				                    <li><a href="" target="_blank">讲师招募</a></li>
+				                    <li><a href=" " target="_blank">意见反馈</a></li>
+				                    <li><a href="" target="_blank">友情链接</a></li>
+				                </ul>
+				            </div>
+				            <p>版权所有 © 2011-2016 上海旅烨网络科技有限公司，严禁抄袭复制</p>
+				        </div>
+				    </div>
+	            </div>
+			</div>	
+       <!-- footer-->
+     </div>
+	</body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js"></script>
+<link href="video.js/video-js.min.css" rel="stylesheet">
+<script src="video.js/video.min.js"></script>
+<script type="text/javascript">
+    var myPlayer = videojs('really-cool-video');
+    videojs("really-cool-video").ready(function(){
+	    var myPlayer = this;
+	    myPlayer.play();
+	    
+		// 开始或恢复播放
+		myPlayer.on('play', function() {  
+			console.log('开始播放');
+            //视频时长
+			var howLongIsThis = myPlayer.duration();
+			console.log(howLongIsThis);
+			
+			//声音大小
+			var howLoudIsIt = myPlayer.volume();
+			console.log(howLoudIsIt);
+           //设置声音
+			myPlayer.volume(0.5);
+
+		});
+		
+		// 暂停播放
+		myPlayer.on('pause', function() {  
+			console.log('暂停播放')
+		});
+		
+    //清晰度切换
+	function playerInitVideo() {
+	$videoPanelMenu = $(".vjs-fullscreen-control");
+	$videoPanelMenu.before('<div class="vjs-subtitles-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button" tabindex="0" role="menuitem" aria-live="polite" aria-expanded="false" aria-haspopup="true">'
+					+ '<div class="vjs-menu" role="presentation">'
+					+ '<ul class="vjs-menu-content" role="menu">'
+					+ '<li class="vjs-menu-item" tabindex="-1" role="menuitemcheckbox"  onclick="changeUrl(this)">高清</li>'
+					+ '<li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemcheckbox"  onclick="changeUrl(this)">标清 </li>'
+					+ '</ul></div><span class="vjs-control-text">清晰度</span></div>');
+	}
+	//加载页面进行播放器初始化
+	myPlayer.ready(function() {
+		playerInitVideo();
+		//player.play();
+		//setsrc(player,"rtmp://192.168.30.21/live/test3","rtmp/flv");
+	});
+	//通过id获取DOM
+	function get(index) {
+		return document.getElementById(index);
+	}
+	//修改播放地址并播放
+	function writeAddressAndPlay(index,url,type) {
+		//播放器操作
+		setsrc(index, url, type?type:"rtmp/flv");
+		play(index);
+	}
+	//高清标清切换就是应用名加减HD
+	function changeUrl(video) {
+		var index = $(video).text();
+		//获取当前播放的url
+		var CurrentUrl = getCurrentAddr(player);
+		$(".vjs-menu-item").removeClass("vjs-selected");
+			$(video).addClass("vjs-selected");
+		if (index == "高清") {
+			if (CurrentUrl.indexOf("HD") == -1) {
+				CurrentUrl = CurrentUrl + "HD";
+			} else {
+				return;
+			}
+		} else {
+			if (CurrentUrl.indexOf("HD") != -1) {
+				CurrentUrl = CurrentUrl.replace("HD", "");
+			} else {
+				return;
+			}
+		}
+		//修改地址并播放
+		writeAddressAndPlay(player, CurrentUrl);
+	}
+		
+		
+		
+		
+//	    
+//	//获取当前类型
+//	function getCurrentType(idnex) {
+//		return idnex.currentType();
+//	}
+	//获取当前播放地址
+//	function getCurrentAddr(index) {
+//		return index.currentSrc();
+//	}
+//	//获取当前播放时间
+//	function getCurrentTime(index) {
+//		return index.currentTime();
+//	}
+//	//获取当前网络状态
+//	function networkState(index) {
+//		return index.networkState();
+//	}
+//	//修改播放地址
+//	function setsrc(index, url, type) {
+//		index.src({
+//			type : type,
+//			src : url
+//		});
+//	}
+//	//重载播放器
+//	function reset(index) {
+//		index.reset();
+//		index.load();
+//	}
+//	//播放
+//	function play(index) {
+//		index.play();
+//	}
+//	//暂停
+//	function pause(index) {
+//		index.pause();
+//	}
+//	    
+	    
+	    
+	    
+//	    myPlayer.on('timeupdate', function () {  
+//      // 如果 currentTime() === duration()，则视频已播放完毕
+//      if (myPlayer.duration() != 0 && myPlayer.currentTime() === myPlayer.duration()) {
+//          alert("播放结束！");
+//      }
+//      });
+        
+	    //播放结束
+		myPlayer.on('ended', function() {
+	        alert('下一节!');
+	    });
+	    
+	 
+        
+        //事件列表
+		//durationchange
+		//ended
+		//error
+		//firstplay
+		//fullscreenchange
+		//loadedalldata
+		//loadeddata
+		//loadedmetadata
+		//loadstart
+		//pause
+		//play
+		//progress
+		//timeupdate
+		//volumechange
+		//resize 
+			
+   
+    });
+   
+</script>
