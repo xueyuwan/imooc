@@ -12,7 +12,6 @@
 	</head>
 	<body>
 	<div class="container-center">
-	    
 		<!---------------------heder部分开始------------------>
 	        <div class="header header2">
 				<div class="header-left">
@@ -46,7 +45,8 @@
 	            </div>
 			</div>
 		<!---------------------heder部分结束------------------>
-		<!--banner-->
+
+		<!---------------------banner------------------------->
 		    <div class="banner-bg">
 				<div class="banner-box">
 					<div class="banner-pic">
@@ -61,9 +61,9 @@
 					</div>
 				</div>
 			</div>
-		<!--banner-->
+		<!---------------------banner结束--------------------->
 		
-		<!--content-->
+		<!---------------------content部分-------------------->
 			<div class="shizhan-conteiner">
 			    <div class="shizhan-content">
 					<h2>首发课程 </h2>
@@ -434,9 +434,9 @@
 
 			    </div>
 			</div>
-		<!--content-->
+		<!---------------------content部分-------------------->
 		
-		<!--footer2-->
+		<!---------------------footer2------------------------>
 		<div class="footer2">
 			<div class="waper">
 			    <div class="footerwaper clearfix">
@@ -466,24 +466,23 @@
 			</div>
 
 		</div>
-       <!-- footer-->
+        <!---------------------footer2结束-------------------->
 	</div>	
 </body>
 </html>
 <script src="js/jquery.min.js"></script>
-<script src="js/idangerous.swiper.min.js"></script>	
-<script type="text/javascript" src="js/jquery_slide.js"></script>
+<script src="js/idangerous.swiper.min.js"></script>	//轮播
+<script type="text/javascript" src="js/jquery_slide.js"></script>//旋转木马
 <script src="js/main.js"></script>
 <script type="text/javascript">
+	//旋转木马
 $(document).ready(function () {
 var mySwiper = new Swiper ('.swiper-container', {
     autoplay: 5000,
     loop: true,
     pagination : '.pagination',
     paginationClickable :true,
-  }) 
-	
-	
+  })
  var newopt={
 		w2:"180",//小图宽度
 		h2:"200"//小图高度 
