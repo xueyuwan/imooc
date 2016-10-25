@@ -151,6 +151,10 @@
 	top: 5px;
 	text-indent: 5px;
 	text-align: left;
+	color: #000;
+	font-size: 14px;
+	margin-top: 0;
+	margin-left: 5px;
 }
 
 #uploader .filelist li p.progress {
@@ -392,19 +396,5 @@
 	opacity: 0.6;
 }
 
-
-#container2{
-	width: 980px;
-	margin: 0 auto;
-}
-
-#uploader2{
-	border: 1px solid #dadada;
-	color: #838383;
-	font-size: 12px;
-	margin-top: 10px;
-	background-color: #FFF;
-	height: 100px;
-}
 
 
