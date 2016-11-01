@@ -37,8 +37,21 @@ $(function(){
    $(".chapter h3").click(function(){
      	$(this).siblings(".video").toggleClass("mychange");
 	});
-   
-    
-    	
- 
+
+	$(window).scroll(function() {
+		if($(window).scrollTop() >= 693){
+			$(".js-fixed").fadeIn(300) ;
+			$("#backTop").css("display","block") ;
+			   }else{
+				$(".js-fixed").fadeOut(300) ;
+			    $("#backTop").css("display","none") ;
+		     }
+	});
+
+	$('#backTop').click(function (e) {
+		e.preventDefault();
+		$('html, body').animate({scrollTop: 0}, 800);
+	});
+
+
 })

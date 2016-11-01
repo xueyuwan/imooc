@@ -1567,6 +1567,7 @@ a:link, a:visited {
 .course-nav-item.on a {
     background: #f01400;
     color: #fff;
+    padding:5px 15px;
 }
 
 .course-nav-item a {
@@ -1702,13 +1703,11 @@ a:link, a:visited {
     text-align: right;
 }
 
-.wrap .top .course-nav-item {
-    margin: 0;
-}
+
 
 .wrap .top .course-nav-item {
     display: inline-block;
-    margin: 5px;
+    margin: 0px;
 }
 
 .wrap .top .course-nav-item a {
@@ -2307,7 +2306,6 @@ a:link, a:visited {
     width: 100%;
     background: #000000;
 }
-
 .next-page {
     position: absolute;
     width: 160px;
@@ -2323,8 +2321,53 @@ a:link, a:visited {
     margin-top: -15px;
     display: none;
 }
-
 /********************************upload*******************************/
+
+
+
+/*******************************animate*******************************/
+.course-banner{ width: 100%; height: 530px; background:url("../images/banner.jpg")}
+.content_box{width: 100%; position: relative;padding: 100px 0; color: #000}
+.comp-tab-t{  padding: 32px 0;  text-align: center; }
+.comp-tab-t ul{  display: inline-block;  }
+.comp-tab-item-first {  margin-left: 0;  }
+.comp-tab-item {  font-size: 16px;  float: left;  margin-left: 60px;  }
+.comp-tab-item a {  color: #4d555d;  font-weight: 600;  }
+.comp-tab-t .active a {  color: #f01414;  }
+.course-fixed-nav {  width: 100%;  height: 60px;  box-shadow: 0 4px 8px rgba(7, 17, 27, 0.2);  position: fixed;  top: 0;  z-index: 100;  background: #ffffff;  text-align: center;  }
+.course-fixed-nav .fixed-course-name {  height: 60px;  line-height: 60px;  color: #07111b;  font-size: 16px;  font-weight: 600;
+    position: absolute;  left: 68px;  top: 0;  }
+.course-fixed-nav .fixed-nav {  display: inline-block;  }
+.course-fixed-nav .ml0 {  margin-left: 0;  }
+.course-fixed-nav .fixed-nav-item {  float: left;  line-height: 60px;  height: 60px;  margin-left: 60px;  }
+.fixed-nav .active a {  color: #f01414!important;  }
+.course-fixed-nav .goumai {  position: absolute;  right: 68px;  top: 0;  line-height: 60px;  height: 60px;  margin-left: 48px;  }
+.course-fixed-nav .goumai .fixed-btn1 {  width: 90px;  background-color: #f01404;  float: left;  }
+.course-fixed-nav .goumai .fixed-nav-btn {  display: block;  width: 120px;  height: 40px;  line-height: 40px;  text-align: center;  font-size: 14px;  color: #fff;  margin-top: 10px;  }
+.hide{ display: none }
+.container-1 h1{font-weight: bold;  font-size: 44px;  line-height: 44px !important;  text-align: center; margin-top: 103px;color: #000;}
+.container-1 h2{width: 530px;  font-size: 28px;  background-color: #2a8cec;  color: #fff;  line-height: 40px;  text-align: center;  margin: 25px auto 74px;}
+.step-list{background: url(../images/2.png) no-repeat center center;width: 1200px;  height:660px;margin: 0 auto;}
+.step-list dd {  text-align: center;  float: left;  width: 360px;  color: #5c5c5c;  margin-bottom: 30px;  }
+.step-list .step-list-tit {  color: #2a8cec;  font-size: 22px;  line-height: 72px;  font-weight: bold;  }
+.step-list .d-1,.step-list .d-7 {  margin-left: 235px; }
+.step-list .d-3, .step-list .d-5 {  margin-left: 85px;  }
+.step-list .d-4, .step-list .d-6 {  margin-left: 280px;  }
+.step-list dd p{ font-size: 14px; line-height: 24px;}
+.container-2 {  overflow: hidden;  background-color: #ffd43b;  height: 580px; width: 100%; margin: 0 auto; }
+.container-2 h1{font-weight: bold;  font-size: 44px;  line-height: 44px !important;  text-align: center;  margin-top: 103px; color: #000}
+.container-2 h2 { width: 624px;  font-size: 28px;  background-color: #fff;  line-height: 40px;  text-align: center;  margin: 25px auto 74px;  }
+.container-2 .proplem-step {  width: 911px;  margin: 0 auto;  }
+.container-2 .proplem-step dd {  float: left;  width: 182px;  text-align: center;  font-size: 22px;  position: relative;  }
+.container-2 .proplem-step i {  display: inline-block;  width: 100px;  height: 75px;  background: url(../images/xiao.jpg) top center no-repeat;  }
+.container-2 .proplem-step p {  line-height: 80px;  }
+.container-3{overflow: hidden;  background:url("../images/bg1.jpg") top center;  height:411px; width: 100%; margin: 0 auto;}
+.container-3 h1{font-weight: bold;  font-size: 44px;  line-height: 44px !important;  text-align: center;  margin-top: 103px; margin-bottom: 44px;}
+.container-3 h2{line-height: 38px;  font-size: 22px;  color: #5c5c5c;  text-align: center;margin: 0 200px;  }
+
+/********************************右侧悬浮*******************************/
+#right-position{ position:fixed; right: 0; top:30%; z-index: 9999; width: 66px;background: #ffffff;box-shadow: -2px 2px 5px 3px rgba(7, 17, 27, 0.1);}
+#right-position a{ display:block;padding: 20px 10px; line-height:20px;}
 
 
 /********************************footer*********************************/
