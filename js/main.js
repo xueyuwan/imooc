@@ -53,5 +53,23 @@ $(function(){
 		$('html, body').animate({scrollTop: 0}, 800);
 	});
 
+	$(".userHPic").hover(function(){
+		$(".userBox").stop().fadeIn(300);
+		$(".userHPic img").addClass("userHPicBorder");
+
+	},function(){
+		$(".userBox").stop().fadeOut(500);
+		$(".userHPic img").removeClass("userHPicBorder");
+	});
+
+	$(".userBox").hover(function(){
+		$(".userBox").stop().fadeIn(300);
+		$(".userHPic img").addClass("userHPicBorder");
+	},function(){
+		$(".userBox").stop().fadeOut(500);
+		$(".userHPic img").removeClass("userHPicBorder");
+	});
+
+
 
 })
