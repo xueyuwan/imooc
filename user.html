@@ -5,6 +5,7 @@
 		<title></title>
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="Font-Awesome/css/font-awesome.min.css">
 	</head>
 	<body>
 	<div class="container-center">
@@ -54,17 +55,91 @@
 				</div>
 				<div class="contentBox">
                        <div class="formBox">
-
+                           <div class="userHeader clearfix">
+							   <div class="headerBt">头像：</div>
+							   <div class="headerPic"><img src="images/ren.jpg"></div>
+							   <div class="headerSetting">
+								   <a href="" class="one"> <i class=" icon-refresh"></i>换一换</a>
+								   <a href="" class="two">QQ头像同步头像</a>
+								   <a href="" class="three"><input type="file" value="上传头像"></a>
+							   </div>
+						   </div>
+						   <form action="">
+							   <div class="wlfg-wrap clearfix">
+								   <label class="label-name" for="nick">昵称：</label>
+								   <div class="rlf-group">
+									   <input type="text" name="nickname" id="nick" autocomplete="off" data-validate="require-nick" class="moco-form-control" value="用户昵称" placeholder="请输入昵称.">
+									   <p class="rlf-tip-wrap errorHint color-red"></p>
+								   </div>
+							   </div>
+							   <div class="wlfg-wrap clearfix">
+								   <label class="label-name" for="job">职位：</label>
+								   <div class="rlf-group">
+									   <select class="moco-form-control rlf-select" name="job" hidefocus="true" id="job" data-validate="require-select">
+										   <option value="">请选择职位</option>
+										   <option value="13">学生</option>
+										   <option value="1">页面重构设计</option>
+										   <option value="6" selected="selected">Web前端工程师</option>
+										   <option value="5">JS工程师</option>
+										   <option value="8">PHP开发工程师</option>
+										   <option value="11">JAVA开发工程师</option>
+										   <option value="7">移动开发工程师</option>
+										   <option value="9">软件测试工程师</option>
+										   <option value="10">Linux系统工程师</option>
+										   <option value="2">交互设计师</option>
+										   <option value="3">产品经理</option>
+										   <option value="15">数据库工程师</option>
+										   <option value="4">UI设计师</option>
+										   <option value="16">全栈工程师</option>
+									   </select>
+									   <p class="rlf-tip-wrap errorHint color-red"></p>
+								   </div>
+							   </div>
+							   <div class="wlfg-wrap clearfix">
+								   <label class="label-name">城市：</label>
+								   <div class="rlf-group profile-address">
+									   <div class="info">
+											   <select id="s_province" name="s_province"  class="moco-form-control"></select>  
+											   <select id="s_city" name="s_city"   class="moco-form-control"></select>  
+											   <select id="s_county" name="s_county"  class="moco-form-control"></select>
+										   <div id="show"></div>
+									   </div>
+									   <div class="cb"></div>
+									   <p class="rlf-tip-wrap errorHint color-red"></p>
+								   </div>
+							   </div>
+							   <div class="wlfg-wrap clearfix">
+								   <label class="label-name h16 lh16">性别：</label>
+								   <div class="rlf-group rlf-radio-group">
+									   <label class="lh16"><input type="radio" hidefocus="true" value="0" name="sex">保密</label>
+									   <label class="lh16"><input type="radio" hidefocus="true" value="1" name="sex" checked="checked">男</label>
+									   <label class="lh16"><input type="radio" hidefocus="true" value="2" name="sex">女</label>
+									   <p class="rlf-tip-wrap errorHint color-red"></p>
+								   </div>
+							   </div>
+							   <div class="wlfg-wrap clearfix">
+								   <label class="label-name" for="aboutme">个性签名：</label>
+								   <div class="rlf-group">
+									   <div class="pr">
+										   <textarea name="aboutme" id="aboutme" rows="5" class="noresize js-sign moco-form-control"></textarea>
+										   <p class="numCanInput js-numCanInput ">还可以输入128个字符</p>
+									   </div>
+								   </div>
+							   </div>
+							   <div class="wlfg-wrap clearfix">
+								   <label class="label-name" ></label>
+								   <div class="rlf-group">
+									   <span id="profile-submit" hidefocus="true" aria-role="button" class="rlf-btn-green btn-block profile-btn">保存</span>
+								   </div>
+							   </div>
+						   </form>
 					   </div>
 				</div>
-
 			</div>
 		</div>
 
-
-
 		<!----------------------footer2---------------------->
-		<div class="footer2">
+		<div class="footer2" style="margin-top: 0">
 			<div class="waper">
 				<div class="footerwaper clearfix">
 					<div class="followus r">
@@ -100,10 +175,22 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/scrollReveal.js"></script>
 <script src="js/main.js"></script>
+<script src="js/area.js" type="text/javascript"></script>
+<script type="text/javascript">_init_area();</script>
+
 <script>
 if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
 		(function(){
 		window.scrollReveal = new scrollReveal({reset: true});
 	})();
 };
+
+var Gid  = document.getElementById ;
+var showArea = function(){
+	Gid('show').innerHTML = "<h3>省" + Gid('s_province').value + " - 市" +
+			Gid('s_city').value + " - 县/区" +
+			Gid('s_county').value + "</h3>"
+}
+//Gid('s_county').setAttribute('onchange','showArea()');
+
 </script>

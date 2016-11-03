@@ -209,7 +209,7 @@ a:link, a:visited {
 
 
 /***********************用户设置页******************************************/
-.page-settings{background: #edeff0;}
+.page-settings{background: #edeff0;padding-bottom: 60px;}
 .page-settings .top {  width: 100%;  height: 160px;  background: url(../images/setting_topbk.png) no-repeat center;  background-size: cover;  }
 .page-settings .top .top_title p {  padding-left: 30px;font-size: 32px;  font-weight: bold;  line-height: 120px; color: #000; }
 .page-settings .setting {  background-color: #ffffff;  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);  width: 960px;  height: 780px;  margin: auto;  margin-top: -40px;  overflow: hidden;  }
@@ -218,124 +218,59 @@ a:link, a:visited {
 .userTable div a{display: inline-block;}
 .userTable  .actived{color: #f01414 !important;  border-bottom: 2px solid #f01414;}
 .page-settings .setting .contentBox {  width: 896px;  margin: auto;  border-top: 1px solid #b7bbbf;  }
-.contentBox .formBox { width: 520px;  margin:0 auto; border: 1px solid #000; }
+.contentBox .formBox { width: 520px;  margin:0 auto; }
 .page-settings .setting .bingd .itemBox {  height: 88px;  width: 895px;  overflow: hidden;  margin: auto;  border-bottom: 1px solid #d9dde1;  }
-.page-settings .setting .bingd .itemBox .left {  width: 60px;
-    float: left;
-    font-size: 36px;
-    color: #f01414;
-    line-height: 98px;
-    padding-left: 12px;
-}
-.page-settings .setting .bingd .itemBox .center {
-    padding-top: 22px;
-    width: 510px;
-    float: left;
-}
-.page-settings .setting .bingd .itemBox .right {
-    float: right;
-    padding-right: 12px;
-    margin-top: 28px;
-}
-.page-settings .setting .bingd .itemBox p {
-    line-height: 24px;
-}
-.page-settings .setting .bingd .itemBox .font2 {
-    color: #93999f;
-    font-size: 14px;
-}
-.page-settings .setting .bingd .itemBox .right .moco-btn-normal {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.page-settings .setting .bingd .itemBox .font1 {
-    color: #2b333b;
-    font-size: 16px;
-    font-weight: bold;
-}
-.page-settings .setting .bingd .itemBox .font3 {
-    color: #2b333b;
-    font-size: 14px;
-}
-.page-settings .setting .bingd .itemBox .font4 {
-    color: #f01414;
-    font-size: 14px;
-}
-.page-settings .setting .bingd .itemBox .font2 {
-    color: #93999f;
-    font-size: 14px;
-}
-.moco-btn-normal:link, .moco-btn-normal:visited {
-    color: #787D82;
-}
-.page-settings .setting .bingd .bb0 {
-    border-bottom: 0px !important;
-}
-
-.page-settings .setting .bingd .h380 {
-    height: 380px !important;
-}
-
-.moco-btn-normal {
-    color: #787D82;
-    background-color: #fff;
-    border-color: #d0d6d9;
-    border-style: solid;
-    border-width: 1px;
-    cursor: pointer;
-    -weibkit-transition: all .3s;
-    -moz-transition: all .3s;
-    transition: all .3s;
-}
+.page-settings .setting .bingd .itemBox .left {  width: 60px;  float: left;  font-size: 36px;  color: #f01414;  line-height: 98px;  padding-left: 12px;  }
+.page-settings .setting .bingd .itemBox .center {  padding-top: 22px;  width: 510px;  float: left;  }
+.page-settings .setting .bingd .itemBox .right {  float: right;  padding-right: 12px;  margin-top: 28px;  }
+.page-settings .setting .bingd .itemBox p {  line-height: 24px;  }
+.page-settings .setting .bingd .itemBox .font2 {  color: #93999f;  font-size: 14px;  }
+.page-settings .setting .bingd .itemBox .right .moco-btn-normal {  padding-left: 15px;  padding-right: 15px;  }
+.page-settings .setting .bingd .itemBox .font1 {  color: #2b333b;  font-size: 16px;  font-weight: bold;  }
+.page-settings .setting .bingd .itemBox .font3 {  color: #2b333b;  font-size: 14px;  }
+.page-settings .setting .bingd .itemBox .font4 {  color: #f01414;  font-size: 14px;  }
+.page-settings .setting .bingd .itemBox .font2 {  color: #93999f;  font-size: 14px;  }
+.moco-btn-normal:link, .moco-btn-normal:visited {  color: #787D82;  }
+.page-settings .setting .bingd .bb0 {  border-bottom: 0px !important;  }
+.page-settings .setting .bingd .h380 { height: 380px !important;  }
+.moco-btn-normal {  color: #787D82;  background-color: #fff;  border-color: #d0d6d9;  border-style: solid;  border-width: 1px;  cursor: pointer;  -weibkit-transition: all .3s;  -moz-transition: all .3s;  transition: all .3s;  }
 .setting .moco-btn{ border: 1px solid #d0d6d9!important; font-family: "微软雅黑";}
-.center .accountBox .inner-i-box {
-    width: 200px;
-    height: 246px;
-    background-color: #f3f5f7;
-    float: left;
-    margin-right: 24px;
-    overflow: hidden;
-    padding-top: 40px;
-    text-align: center;
-}
-.page-settings .setting .bingd .itemBox .center .accountBox .inner-i-box .btn {
-    border-radius: 2px;
-    background-color: #00c850;
-    width: 120px;
-    height: 40px;
-    line-height: 40px;
-    color: #fff;
-    margin-top: 20px;
-}
-.btn {
-    display: inline-block;
-    margin-bottom: 0;
-    font-weight: 200;
-    text-align: center;
-    vertical-align: middle;
-    touch-action: manipulation;
-    cursor: pointer;
-    text-decoration: none;
-    box-sizing: content-box;
-    background-image: none;
-    border: 1px solid transparent;
-    -webkit-appearance: none;
-    white-space: nowrap;
-    outline: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
+.center .accountBox .inner-i-box {  width: 200px;  height: 246px;  background-color: #f3f5f7;  float: left;  margin-right: 24px;  overflow: hidden;  padding-top: 40px;  text-align: center;  }
+.page-settings .setting .bingd .itemBox .center .accountBox .inner-i-box .btn {  border-radius: 2px;  background-color: #00c850;  width: 120px;  height: 40px;  line-height: 40px;  color: #fff;  margin-top: 20px;  }
+.btn {  display: inline-block;  margin-bottom: 0;  font-weight: 200;  text-align: center;  vertical-align: middle;  touch-action: manipulation;  cursor: pointer;  text-decoration: none;  box-sizing: content-box;
+    background-image: none;  border: 1px solid transparent;  -webkit-appearance: none;  white-space: nowrap;  outline: none;  -webkit-user-select: none;  -moz-user-select: none;  -ms-user-select: none;  user-select: none;  }
+ .icon-comment-alt, .icon-weibo{ color: #c8cdd2;  width: 80px;  height: 80px;  font-size: 80px;  margin-top: 40px;  }
+.userHeader{margin-top: 20px;}
+.userHeader>div{ float: left }
+.userHeader .headerSetting a{display: block;}
+.userHeader .headerBt{width: 70px;  text-align: right;  height: 40px;  line-height: 40px;  color: #07111b;  font-weight: bold;  font-size: 14px;}
+.userHeader .headerPic{ margin-left: 8px;}
+.userHeader .one{height: 16px;  cursor: pointer;  line-height: 16px;  padding-left: 20px;  margin: 10px;  font-size: 16px;  font-weight: bold;  color: #444;}
+.userHeader .two{  width: 134px;  height: 56px;  line-height: 56px;  color: #b7bbbf;  vertical-align: middle;  text-align: center;  padding-left: 20px;
+    transition: background-color 0.2s;  -webkit-transition: background-color 0.2s;  -moz-transition: background-color 0.2s;  -o-transition: background-color 0.2s;}
+.userHeader .three{  width: 134px;  height: 36px;  line-height: 36px;  color: #4d555d;  background-color: #f3f5f7;  vertical-align: middle;  text-align: center;
+    cursor: pointer;  transition: background-color 0.2s;  -webkit-transition: background-color 0.2s;  -moz-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;  background-color: #fff!important;  border: 1px solid #ccc;  color: #4d555d; margin:50px 0 0 20px;  }
+.label-name{     float: left;  width: 70px;  text-align: right;  height: 40px;  line-height: 40px;  color: #07111b;  font-weight: bold;  font-size: 14px;  }
+.wlfg-wrap{ margin-top: 20px}
+.rlf-group {  float: left;  width: 410px;  margin-left: 8px;  color: #60686b;  }
+.moco-form-control {  display: block;  width: 100%;  height: 34px;  padding: 6px 12px;  font-size: 14px;  line-height: 1.42857143;  color: #787d82;  background-color: #fff;
+    background-image: none;  border: 1px solid #ccc;  border-radius: 2px;  box-sizing: border-box;  }
+.wlfg-wrap .profile-address select {  float: left;  margin-right: 4px;  width: 125px;  height: 40px;  }
+.wlfg-wrap .rlf-radio-group {  max-width: 402px;  padding-left: 10px;  margin-top: 10px;  }
+.wlfg-wrap .rlf-radio-group .lh16{  margin-right: 10px;  }
+.wlfg-wrap .rlf-group {  float: left;  width: 410px;  margin-left: 8px;  color: #60686b;  }
+.textarea.moco-form-control {  height: auto;  }
+.noresize {  resize: none;  }
+#aboutme{ height: 100px;}
+.wlfg-wrap .numCanInput {  padding-top: 6px;  padding-bottom: 14px  }
+.wlfg-wrap .rlf-btn-green {  background-color: #00b33b;  border-radius: 2px;  }
+.wlfg-wrap .profile-btn {  display: block;  width: 100%;  color: #fff;  text-align: center;  line-height: 40px;  cursor: pointer;  width: 96px;  height: 40px;  }
 
- .icon-comment-alt, .icon-weibo{
-    color: #c8cdd2;
-    width: 80px;
-    height: 80px;
-    font-size: 80px;
-    margin-top: 40px;
-}
-
+/************************userList*************************************/
+.userbg{ width: 100%;height: 220px; background: url("../images/temp1.jpg") top left repeat;    background-size: cover;}
+.userContent{ width: 1200px; height: 1000px; border:1px solid #000; position: relative; margin: 0 auto ;}
+.userLeft{position: absolute;  left: 0px;  top: -190px; width: 200px; height: 500px; border: 1px red solid}
 
 /*****************************banner*********************************/
 .bk {
