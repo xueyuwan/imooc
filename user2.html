@@ -36,7 +36,8 @@
 					<a href="" class="userHPic" title="我得消息"><img src="images/user.jpg"></a>
 				</div>
 				<div class="userBox">
-                  <p><span>个人设置</span><span>退出登录</span></p>
+					<div class="userAbout"></div>
+                    <p class="clearfix"><a href="user.html" class="l">个人设置</a><a href="javascript:;" class="r">退出登录</a></p>
 				</div>
 			</div>
 		</div>
@@ -56,7 +57,7 @@
 				<div class="contentBox">
 					<div class="bingd">
 						<div class="itemBox">
-							<div class="left"><i class="icon-envelope"></i></div>
+							<div class="left"><i class="fa fa-envelope"></i></div>
 							<div class="center">
 								<p><span class="font1">邮箱</span>
 									<span class="font3">
@@ -67,45 +68,45 @@
 								<p class="font2">可用邮箱加密码登录慕课网，可用邮箱找回密码</p>
 							</div>
 							<div class="right">
-								<a href="javascript:;" class="change js-change moco-btn moco-btn-normal mr12" changetype="email">更改</a>
+								<a href="javascript:;" class="change js-change moco-btn moco-btn-normal mr12" changetype="email" id="user-modify">更改</a>
 								<a href="javascript:;" class="verify js-verify moco-btn moco-btn-normal">立即验证</a>
 							</div>
 						</div>
 						<div class="itemBox">
-							<div class="left"><i class="  icon-tablet"></i></div>
+							<div class="left"><i class="fa fa-mobile-phone"></i></div>
 							<div class="center">
 								<p> <span class="font1">手机</span> <span class="font4" id="jsPhone">未绑定（绑定手机可得1积分）</span></p>
 								<p class="font2">可用手机号加密码登录慕课网，可通过手机号找回密码</p>
 							</div>
 							<div class="right">
-								<button class="binding moco-btn moco-btn-normal js-bindphone">立即绑定</button>
+								<button class="binding moco-btn moco-btn-normal js-bindphone" id="user-mobile">立即绑定</button>
 							</div>
 						</div>
 						<div class="itemBox">
-							<div class="left"><i class="icon-lock"></i></div>
+							<div class="left"><i class="fa fa-lock"></i></div>
 							<div class="center">
 								<p> <span class="font1">密码</span> 已设置</p>
 								<p class="font2">用于保护帐号信息和登录安全</p>
 							</div>
 							<div class="right">
-								<button class="moco-btn moco-btn-normal js-changePWD">修改</button>
+								<button class="moco-btn moco-btn-normal js-changePWD" id="user-password">修改</button>
 							</div>
 						</div>
 						<div class="itemBox bb0 h380">
-							<div class="left"><i class="icon-comments-alt"></i></div>
+							<div class="left"><i class="fa fa-comments-o"></i></div>
 							<div class="center">
 								<p class="font1">社交帐号</p>
 								<p class="font2">绑定第三方帐号，可以直接登录，还可以将内容同步到以下平台，与更多好友分享</p>
 								<div class="accountBox">
 									<div class="inner-i-box">
-										<i class="icon-comment-alt"></i>
+										<i class="fa fa-weixin fa-5x"></i>
 										<p class="mt20">未绑定微信</p>
-										<a href="" aria-role="button" hidefocus="true" class="rlf-btn-green btn js-bind ">立即绑定</a>
+										<a href="javascript:;" aria-role="button" hidefocus="true" class="rlf-btn-green btn js-bind " id="weixin-bind" >立即绑定</a>
 									</div>
 									<div class="inner-i-box">
-										<i class="icon-weibo"></i>
+										<i class="fa fa-weibo fa-5x"></i>
 										<p class="mt20">未绑定微博</p>
-										<a href="" aria-role="button" hidefocus="true" class="rlf-btn-green btn js-bind ">立即绑定</a>
+										<a href="javacsript:;" aria-role="button" hidefocus="true" class="rlf-btn-green btn js-bind " id="weibo-bind" >立即绑定</a>
 									</div>
 								</div>
 							</div>
@@ -154,12 +155,5 @@
 	</body>
 </html>
 <script src="js/jquery.min.js"></script>
-<script src="js/scrollReveal.js"></script>
 <script src="js/main.js"></script>
-<script>
-if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
-		(function(){
-		window.scrollReveal = new scrollReveal({reset: true});
-	})();
-};
-</script>
+<script src="layer/layer.js"></script>

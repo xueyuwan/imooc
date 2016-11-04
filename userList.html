@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="Font-Awesome/css/font-awesome.min.css">
+		<!--<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">-->
 	</head>
 	<body>
 	<div class="container-center">
@@ -36,19 +37,82 @@
 					<a href="" class="userHPic" title="我得消息"><img src="images/user.jpg"></a>
 				</div>
 				<div class="userBox">
-                  <p><span>个人设置</span><span>退出登录</span></p>
+					<div class="userAbout"></div>
+					<p class="clearfix"><a href="user.html" class="l">个人设置</a><a href="javascript:;" class="r">退出登录</a></p>
 				</div>
 			</div>
 		</div>
 		<!---------------------heder部分结束------------------>
-		<div class="userbg"></div>
-		<div class="userContent">
-			<div class="userLeft">
 
+		<div class="userbg">
+			<div class="user-info">
+				<h3 class="user-name clearfix">
+					<span>嘻嘻哈哈啊</span>
+				</h3>
+				<p class="about-info">
+					<span class="gender girl" title="女"></span>湖北 武汉市 Web前端工程师
+					<span class="u-info-learn">学习时长 <em>82小时27分</em></span>
+					<span class="u-info-credit">
+						<a href=>积分<em>0</em></a>
+                    </span>
+					<span class="u-info-mp">
+						<a href=" ">经验<em>3883</em></a>
+					</span>
+				</p>
+				<p class="user-desc">这位同学很懒，木有签名的说～</p>
+				<div class="study-info clearfix">
+					<div class="item follows">
+						<a href=""><em>2</em></a>
+						<span>关注</span>
+					</div>
+					<div class="item followers">
+						<a href=""><em>0</em></a>
+						<span>粉丝</span>
+					</div>
+				</div>
 			</div>
-
 		</div>
-
+		<div class="userContent">
+			<div class="userLeft slider">
+				<div class="user-pic" data-is-fans="" data-is-follows="">
+					<div class="user-pic-bg"></div>
+					<img class="img" src="http://img.mukewang.com/545867340001101702200220-200-200.jpg" alt="">
+					<div class="set-btn"><a href="user.html "><i class="fa fa-gear"></i></a></div>
+				</div>
+				<ul>
+					<li>
+						<a href="" class="active">
+							<i class="fa fa-home fa-fw"></i><span>主页</span><b class="icon-caret-right"></b>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fa fa-book fa-fw"></i><span>课程</span><b class="icon-caret-right"></b>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fa fa-pencil fa-fw"></i><span>实战</span><b class="icon-caret-right"></b>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fa fa-hand-o-right "></i><span>路径</span><b class="icon-caret-right"></b>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fa fa-question-circle-o"></i><span>猿问</span><b class="icon-caret-right"></b>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<i class="fa fa-edit"></i><span>手记</span><b class="icon-caret-right"></b>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 
 		<!----------------------footer2---------------------->
 		<div class="footer2" >
@@ -78,23 +142,28 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
 		<!----------------------footer2结束------------------>
 	</div>
 	</body>
 </html>
 <script src="js/jquery.min.js"></script>
-<script src="js/scrollReveal.js"></script>
 <script src="js/main.js"></script>
-<script src="js/area.js" type="text/javascript"></script>
-<script type="text/javascript">_init_area();</script>
 
 <script>
-if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
-		(function(){
-		window.scrollReveal = new scrollReveal({reset: true});
-	})();
-};
-
+	var marginleft=$(".userContent").offset().left;
+	console.log(marginleft);
+	$(window).scroll(function() {
+		if($(window).scrollTop() >= 160){
+			$(".userLeft").addClass("userLeft2").css("left",marginleft) ;
+			$(".user-pic>img").addClass("suimg");
+			$(".user-pic-bg").addClass("su-user-pic-bg");
+			$(".set-btn").css("display","none");
+		}else{
+			$(".userLeft").removeClass("userLeft2").css("left","0") ;
+			$(".user-pic>img").removeClass("suimg");
+			$(".user-pic-bg").removeClass("su-user-pic-bg");
+			$(".set-btn").css("display","block");
+		}
+	});
 </script>

@@ -71,5 +71,69 @@ $(function(){
 	});
 
 
+	$("#user-modify").on("click",function(){
+		layer.open({
+			type: 1,
+			area: ['600px', '360px'],
+			title: '验证身份',
+			shadeClose: true, //点击遮罩关闭
+			content: '\<\div style="padding:20px;">自定义内容\<\/div>'
+		});
+	});
+	$("#user-mobile").on("click",function(){
+		layer.open({
+			type: 1,
+			area: ['600px', '360px'],
+			title: '手机绑定',
+			shadeClose: true, //点击遮罩关闭
+			content: '\<\div style="padding:20px;">自定义内容\<\/div>'
+		});
+	});
+
+	$("#user-password").on("click",function(){
+		layer.open({
+			type: 1,
+			area: ['600px', '360px'],
+			title: '修改密码',
+			shadeClose: true, //点击遮罩关闭
+			content: '\<\div style="padding:20px;">自定义内容\<\/div>'
+		});
+	});
+   $("#weixin-bind").on("click",function () {
+
+	   layer.open({
+		   type: 2,
+		   title: 'layer mobile页',
+		   shadeClose: true,
+		   shade: 0.8,
+		   area: ['380px', '500px'],
+		   content: 'http://layer.layui.com/mobile/' //iframe的url
+	   });
+   });
+
+	$("#weibo-bind").on("click",function () {
+		layer.open({
+			type: 2,
+			title: 'layer mobile页',
+			shadeClose: true,
+			shade: 0.8,
+			area: ['1200px', '600px'],
+			content: 'http://weibo.com/alvye'//iframe的url
+		});
+	});
+	$(".login").on("click",function () {
+		layer.tab({
+			area: ['600px', '300px'],
+			tab: [{
+				title: '登陆',
+				content: '内容1'
+			}, {
+				title: '注册',
+				content: '内容2'
+			}]
+		});
+	})
+
+	
 
 })
